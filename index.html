@@ -11,54 +11,71 @@
     <h1 id="title">Survey Form</h1>
     <p id="descriptio">This is a placeholder text to explain the purpose of the survey and its scope to compell user to fill it</p>
     <form id="survey-form" action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Aniceto Porsisoca">
+        <label for="name-label">Name:</label>
+        <input type="text" id="name-label" name="name" placeholder="Enter name">
         <br>
-        <label for="email">Email:</label>
-        <input type="number" id="email" name="email" placeholder="aniceto.porsi@aol.com">
+        
+        <label for="email-label">Email:</label>
+        <input type="email" id="email-label" name="email" placeholder="Enter e-mail" >
         <br>
-        <label for="age">Age:</label>
-        <input type="email" id="email" name="email" placeholder="52">
+        
+        <label for="number-label">Age:</label>
+        <input type="number" id="number-label" name="age" placeholder="Enter age" min="15" max="99">
         <br>
+        
         <label for="cars">Which option best describes your current role?</label>
         <br>
-        <select name="cars" id="cars">
-            <option value="volvo">Student</option>
-            <option value="saab">Full Time Job</option>
-            <option value="mercedes">Full Time Learner</option>
-            <option value="audi">Prefer not to say</option>
-          </select>
-          <br>
-          <p>Would you recommend freeCodeCamp to a friend?</p>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">Definitely</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">Maybe</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Not sure</label>
+            <select name="Occupation" id="dropdown">
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            </select>
             <br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" id="definitely" name="recommend">
+            <label for="definitely">Definitely</label><br>
+            
+            <input type="radio" id="maybe" name="recommend">
+            <label for="maybe">Maybe</label><br>
+            
+            <input type="radio" id="not-sure" name="recommend">
+            <label for="not-sure">Not sure</label>
+            <br>
+            
             <p>What would you like to see improved? (Check all that apply)</p>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> Front-end Projects</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Back-end Projects</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Data Visualization</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Challenges</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Open Source Community</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Gitter help rooms</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> City Meetups</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Forum</label><br>
+            
+            <input type="checkbox" id="choice1" name="choice1" value="fep">
+            <label for="choice1"> Front-end Projects</label><br>
+            
+            <input type="checkbox" id="choice2" name="choice2" value="bep">
+            <label for="choice2"> Back-end Projects</label><br>
+            
+            <input type="checkbox" id="choice3" name="choice3" value="dv">
+            <label for="choice3"> Data Visualization</label><br>
+            
+            <input type="checkbox" id="choice4" name="choice4" value="ch">
+            <label for="choice4"> Challenges</label><br>
+            
+            <input type="checkbox" id="choice5" name="choice5" value="opc">
+            <label for="choice5"> Open Source Community</label><br>
+            
+            <input type="checkbox" id="choice6" name="choice6" value="ghr">
+            <label for="choice6"> Gitter help rooms</label><br>
+            
+            <input type="checkbox" id="choice7" name="choice7" value="cm">
+            <label for="choice7"> City Meetups</label><br>
+            
+            <input type="checkbox" id="choice8" name="choice8" value="frm">
+            <label for="choice8"> Forum</label>
             <br>
+            
             <p>Any comments or suggestions?</p>
+        
             <input type="text" name="fname" placeholder="Enter your comment here">
             <br>
-            <button>Submit</button>
+            <br>
+            <button id="submit">Submit</button>
 
     </form>
 
